@@ -1,0 +1,381 @@
+/* =========================
+CSS RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f5f2;
+color: #333;
+}
+
+.container {
+width: 90%;
+max-width: 1000px;
+margin: auto;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header {
+background-color: #1f4d2e;
+color: white;
+padding: 20px 0;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo h1 {
+font-size: 25px;
+}
+
+.logo p {
+font-size: 13px;
+}
+
+/* SELECTOR DASAR: nav a */
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 15px;
+
+
+/*TRANSITION*/
+transition: 0.3s;
+
+
+}
+
+/*HOVER*/
+
+nav a:hover {
+color: #a9e8b2;
+
+
+/*TRANSFORM*/
+transform: translateY(-3px);
+
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+
+
+/*LINEAR GRADIENT*/
+background: linear-gradient(135deg, #1f4d2e, #4d8b5c);
+
+color: white;
+padding: 60px 0;
+}
+
+.hero-content {
+
+/*FLEXBOX*/
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+
+gap: 30px;
+
+}
+
+.hero-text {
+flex: 1;
+}
+
+.hero-text h2 {
+font-size: 40px;
+margin: 15px 0;
+}
+
+.hero-text h2 span {
+color: #a9e8b2;
+}
+
+.hero-text p {
+margin-bottom: 15px;
+}
+
+/*BUTTON*/
+
+.btn {
+display: inline-block;
+background-color: white;
+color: #1f4d2e;
+
+padding: 10px 20px;
+margin-top: 10px;
+
+text-decoration: none;
+border-radius: 5px;
+
+/*TRANSITION*/
+transition: 0.3s;
+
+}
+
+.btn:hover {
+background-color: #a9e8b2;
+/*TRANSFORM*/
+transform: scale(1.05);
+
+}
+/*GAMBAR*/
+.hero-image img {
+width: 230px;
+height: 230px;
+object-fit: cover;
+border-radius: 50%;
+/*BOX SHADOW*/
+box-shadow: 0 5px 15px #222;
+/*TRANSITION*/
+transition: 0.3s;
+}
+
+.hero-image img:hover {
+
+/*TRANSFORM*/
+transform: scale(1.05);
+
+}
+
+/* =========================
+SECTION
+========================= */
+
+.section {
+padding: 60px 0;
+}
+
+.section h2 {
+color: #1f4d2e;
+margin-bottom: 5px;
+}
+
+.subtitle {
+color: #4d8b5c;
+margin-bottom: 25px;
+}
+
+/* =========================
+CARD
+========================= */
+
+/*GRID*/
+
+.card-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+
+}
+
+/*SELECTOR DASAR: .card */
+.card {
+background-color: white;
+padding: 25px;
+border-radius: 10px;
+/*BOX SHADOW*/
+box-shadow: 0 3px 10px #ccc;
+/*TRANSITION*/
+transition: 0.3s;
+
+}
+
+/*HOVER + TRANSFORM*/
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 7px 15px #aaa;
+}
+
+.card h3 {
+color: #1f4d2e;
+margin: 10px 0;
+}
+
+.icon {
+font-size: 35px;
+}
+
+/* =========================
+KEGIATAN
+========================= */
+
+.kegiatan {
+background-color: #e3eee5;
+}
+
+/*GRID*/
+.activity-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+
+.activity-card {
+background-color: white;
+
+padding: 20px;
+
+border-radius: 8px;
+
+/*BOX SHADOW*/
+box-shadow: 0 3px 8px #ccc;
+/*TRANSITION*/
+transition: 0.3s;
+
+}
+
+.activity-card:hover {
+
+/*TRANSFORM*/
+transform: translateY(-5px);
+}
+.activity-card span {
+color: #4d8b5c;
+font-weight: bold;
+}
+
+.activity-card h3 {
+margin: 8px 0;
+}
+
+/* =========================
+DATA DIRI
+========================= */
+
+.profile-container {
+/* FLEXBOX*/
+display: flex;
+gap: 20px;
+
+}
+
+.profile-card {
+flex: 1;
+background-color: white;
+
+padding: 25px;
+border-radius: 10px;
+/* BOX SHADOW */
+box-shadow: 0 3px 10px #ccc;
+
+}
+
+.profile-card h3 {
+color: #1f4d2e;
+margin-bottom: 15px;
+}
+
+.profile-card p {
+margin: 8px 0;
+}
+
+/* =========================
+TABLE
+========================= */
+
+.table-wrapper {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+
+/* BOX SHADOW */
+box-shadow: 0 3px 10px #ccc;
+}
+
+th {
+background-color: #1f4d2e;
+color: white;
+}
+th,
+td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+/*HOVER*/
+tr:hover {
+background-color: #e5f2e7;
+}
+/* =========================
+FOOTER
+========================= */
+footer {
+text-align: center;
+background-color: #1f4d2e;
+color: white;
+padding: 30px;
+}
+footer p {
+margin-top: 5px;
+}
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-content {
+    flex-direction: column;
+    text-align: center;
+}
+/* GRID menjadi 1 kolom */
+.card-container {
+    grid-template-columns: 1fr;
+}
+.activity-grid {
+    grid-template-columns: 1fr 1fr;
+}
+.profile-container {
+    flex-direction: column;
+}
+
+}
+
+/* =========================
+UNTUK HP KECIL
+========================= */
+@media (max-width: 500px) {
+.hero-text h2 {
+    font-size: 30px;
+}
+.hero-image img {
+    width: 180px;
+    height: 180px;
+}
+.activity-grid {
+    grid-template-columns: 1fr;
+}
+nav {
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    margin: 5px;
+}
+}
